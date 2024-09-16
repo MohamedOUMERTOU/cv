@@ -1,0 +1,12 @@
+{% extends 'mycv/base.html' %}
+
+{% block title %}{{ project.title }} - Project Details{% endblock %}
+
+{% block content %}
+<section class="project-detail">
+    <h1>{{ project.title }}</h1>
+    <img src="{{ project.image.url }}" alt="{{ project.title }}">
+    <p>{{ project.description }}</p>
+    <a href="{{ project.github_link }}">View on GitHub</a>
+</section>
+{% endblock %}

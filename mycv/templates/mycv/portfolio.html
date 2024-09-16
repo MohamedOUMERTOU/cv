@@ -1,0 +1,26 @@
+{% extends 'mycv/base.html' %}
+{% load static %}
+{% block title %}Portfolio - My Projects{% endblock %}
+
+{% block content %}
+<section class="portfolio">
+    <h1>My Projects</h1>
+    <div class="projects-grid">
+        {% for project in projects %}
+        <div class="project-item">
+
+            <img src="{{ project.image.url }}" alt="{{ project.title }}" width="100px" height="100px">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description|truncatewords:10 }}</p>
+            <div class="Details">
+            
+            <a href="{{ project.github_link }}"> <img src="{% static 'images/github.png' %}" alt="not found" height="30px"/></a>
+            <a href="{% url 'project_detail' project.id %}">View Details</a>
+        </div>
+    </div>
+        {% empty %}
+        <p>No projects found.</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
