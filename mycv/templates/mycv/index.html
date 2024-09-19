@@ -4,22 +4,26 @@
 
 {% block content %}
 <section class="intro">
+    <img src="{% static 'images/profil.png' %}" alt="not found" height="300px" width="300px"/>
     <div>
-        <h3>I'm Mohamed oumertou and FullStack Developer</h3>
-       <p> &nbsp; &nbsp; &nbsp; I’m a Full Stack Developer with over 2 years of experience in the insurance industry.
+        <h1>I'm Mohamed oumertou and FullStack Developer</h1>
+       <p> I’m a Full Stack Developer with over 2 years of experience in the insurance industry.
          I’m skilled in React.js, Django, Java, and PL/SQL, and I also have a strong background in data engineering.
          I excel at building smart, efficient solutions and leveraging data to enhance performance.</p>
-
-         <p> &nbsp;&nbsp;&nbsp;&nbsp; I’m excited to tackle new and challenging projects. Let’s work together to create something amazing!</p>
-        <div class="into-skills">
-          
-
+         <p>I’m excited to tackle new and challenging projects. Let’s work together to create something amazing!</p>
+         <button onclick="download()"><i class="fa-solid fa-download"></i><span>My resume</span></button>
+         <script>
+            function download() {
+                const pdfUrl = "{% static 'images/CV_OUMERTOU_MOHAMED.pdf' %}"; 
+                const link = document.createElement('a');
+                link.href = pdfUrl;
+                link.download = 'CV_OUMERTOU_MOHAMED.pdf'; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+         </script>
         </div>
-    
-        </div>
-   <img src="{% static 'images/profil.png' %}" alt="not found" height="300px" width="300px"/>
-   
-    
 </section>
 <section class="network">
     <ul>

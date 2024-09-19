@@ -21,3 +21,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const download = () =>{
+    console.log('');
+    
+}

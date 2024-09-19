@@ -39,10 +39,12 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 
 
+
+
 # Media files (uploaded images)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
-ALLOWED_HOSTS = ['medoumertou.com', 'www.medoumertou.com', '.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -136,8 +138,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'mycv' / 'static']
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-STATICFILES_DIRS = ['D:/projectpython/portfolio/cv/mysite/mycv/static']
+#STATICFILES_DIRS = ['D:/projectpython/portfolio/cv/mysite/mycv/static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

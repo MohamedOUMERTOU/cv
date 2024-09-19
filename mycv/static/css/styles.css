@@ -51,7 +51,7 @@ margin-left: 80px;
   padding: 20px;
     display:flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 50px;
     background-color: white;
     border-radius: 5px;
     border: 1px solid gray;
@@ -60,15 +60,37 @@ margin-left: 80px;
 
 .intro >div {
   flex-basis: 800px;
- 
+  margin: 40px 10px;
 }
+.intro >div>h1{
+  margin-bottom: 20px;
+  color: #0056b3;
+  font-weight:900;
+  text-decoration: underline;
+}
+
 .intro>div>ul{
  display: flex;
 
 }
 .intro >img {
- border-radius: 20%;
-  margin-left: 300px;
+  border-radius: 20%;
+  margin-left: 50px;
+  box-shadow: 3px 3px 10px rgb(95, 95, 103);
+}
+.intro >div>button{
+  border:none;
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: rgba(128, 128, 128, 0.795);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(221, 129, 10), rgba(224, 29, 42, 0.651));
+  cursor: pointer;
 }
 .profession{
    margin-top: 30px;
