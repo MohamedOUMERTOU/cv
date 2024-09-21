@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mycv
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn mysite.wsgi:application --bind 0.0.0.0:8000
+    envVars:
+      DJANGO_SECRET_KEY: 'django-insecure-zphjhkb-_%p*60ewm6_om(h7w7-oql%f#=4^qv(i6+^jzaq!^9'git 
+      DEBUG: "false"
