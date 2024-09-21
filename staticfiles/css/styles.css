@@ -1,0 +1,362 @@
+ /* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* Body Styling */
+  body {
+    background-color: #c5c7c157;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    
+   
+  }
+  
+  /* Header Styling */
+  header {
+  
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+  }
+
+.header {
+    
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.header> li{
+margin-left: 80px;
+    
+}
+.header> li>a:hover{
+       border-bottom: rgb(245, 170, 8) solid 3px;
+        font-size: large;
+        transition-duration: 0.5s;
+    }
+  
+.intro {
+  margin-top: 40px;
+  padding: 20px;
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.381) ;
+}
+
+.intro >div {
+  flex-basis: 800px;
+  margin: 40px 10px;
+}
+.intro >div>h1{
+  margin-bottom: 20px;
+  color: #0056b3;
+  font-weight:900;
+  text-decoration: underline;
+}
+
+.intro>div>ul{
+ display: flex;
+
+}
+.intro >img {
+  border-radius: 20%;
+  margin-left: 50px;
+  box-shadow: 3px 3px 10px rgb(95, 95, 103);
+}
+.intro >div>button{
+  border:none;
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: rgba(128, 128, 128, 0.795);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(221, 129, 10), rgba(224, 29, 42, 0.651));
+  cursor: pointer;
+}
+.profession{
+   margin-top: 30px;
+   display: flex;
+   gap: 20px;
+   
+}
+.experiences{
+ box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.381);
+ flex: 1;
+ border-radius: 5px;
+ padding: 30px;
+ background-color: white;
+ border: 1px solid gray;
+
+
+}
+
+.education{
+  box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.381) ;
+ border-radius: 7px;
+ padding: 20px;
+ background-color: white;
+ border: 1px solid gray;
+}
+.education>div{
+  margin-top: 18px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+ align-items: center;
+ padding: 10px;
+ gap: 10px;
+}
+.company{
+  display: flex;
+  align-items: center;
+}
+
+.company>div{
+ flex: 3;
+
+  
+}
+.company>img{
+  width: 80px;
+  height: 50px;
+   flex: 1;
+ }
+
+.network > ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: white;
+  width: 550px;
+  padding: 10px 10px ;
+  margin: auto;
+  padding-right:60px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.276);
+  border: 1px solid gray;
+}
+.network{
+
+  margin-top: 30px;
+}
+.network > ul> li{
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.network > ul> li>img{
+ border-radius: 50%;
+}
+ li> a {
+  text-decoration: none;
+}
+
+.skills{
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.276);
+  border: 1px solid gray;
+  padding: 10px 40px  ;
+
+}
+.level>i{
+  color: rgb(247, 247, 7);
+ 
+}
+
+.skills-grid{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+
+ 
+ 
+ 
+}
+.skill-item{
+   /*border: 1px solid rgba(128, 128, 128, 0.356);*/
+margin-left: 40px;
+  border-radius: 5px ;
+  padding: 5px;
+  background-color: #d2cdcd2b;
+  
+}
+.skill-item:hover{
+  background-color: rgb(26, 109, 181);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.skill-icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+  /* Project Cards */
+  .project-card {
+    background: #fff;
+    border: 1px solid #3813f5;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Styling */
+  .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #5b5757aa;
+    color: #fff;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(67, 65, 65, 0.651));
+  }
+  .foot >ul{
+   display: flex;
+   list-style-type: none;
+   justify-content: space-around;
+ width: 40%;
+ margin: auto;
+
+  }
+  .foot >ul>li>a>img{
+
+      border-radius: 50%;
+  }
+  .img_pro {
+    width: 250px;
+    height: 250px;
+  }
+  
+  /* Style for the navigation bar */
+  nav {
+   /* background-color: #f8f9fa; /* Optional: Change background color */
+    padding: 10px; /* Optional: Add padding for spacing */
+  }
+  
+  /* Remove default list styling */
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+  }
+  
+  /* Style for each list item */
+  .nav-list li {
+    margin-right: 15px; /* Space between items */
+  }
+  
+  /* Style for links */
+  .nav-list a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Change text color */
+    font-weight: bold; /* Optional: Make text bold */
+  }
+  
+  /* Optional: Add hover effect */
+  .nav-list a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+   
+  .contact {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .contact >div{
+    padding: 30px;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.429);
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 400px;
+    text-align: center;
+    
+  }
+  .form-group {
+    margin-bottom: 15px; /* Add some space between form groups */
+}
+
+.form-group label {
+    display: block; /* Make labels block to ensure they are on their own line */
+    margin-bottom: 5px; /* Add some space below the label */
+}
+.projects-grid{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.portfolio{
+  background-color: white;
+  padding: 30px;
+  border: 1px solid gray;
+  box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.279);
+  border-radius: 15px;
+
+}
+.project-item{
+  width: 25%;
+  border:1px solid rgb(167, 17, 17) ;
+  padding: 30px;
+  border-radius: 30px  5px  30px  5px ;
+
+}
+.Details{
+  border-top: 1px solid gray;
+  margin-top: 10px;
+  padding-top: 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+ 
+
+ bottom:5px;
+}
