@@ -49,7 +49,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 ALLOWED_HOSTS = [
     'localhost',   # For local development
     '127.0.0.1',  # Local IP address
-    'mycv.onrender.com',
+    'mycv-l7pd.onrender.com',
 ]
 
 
