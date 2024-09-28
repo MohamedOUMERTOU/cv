@@ -46,11 +46,7 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 # Media files (uploaded images)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
-ALLOWED_HOSTS = [
-    'localhost',   # For local development
-    '127.0.0.1',  # Local IP address
-    'mycv-l7pd.onrender.com',
-]
+ALLOWED_HOSTS = ['medOumertou.pythonanywhere.com']
 
 
 # Application definition
